@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=dvice-width,initial-scale=1.0">
+        <meta http-equiv="X=UA-Compatible">
+        <title>関数とクラス</title>
+    </head>
+    <body>
+        <script>
+            'use strict';
+          
+        //    class Cluculator {
+        //     constructor(x,y) {
+        //         this.x = x;
+        //         this.y = y;
+        //     }
+        //     addTwoNum() {
+        //         return this.x + this.y;
+        //     }
+        //    }
+
+        //    const CalcA = new Cluculator(3,4);
+        //    const CalcB = new Cluculator(1,1);
+        //    console.log(CalcA.addTwoNum());
+        //    console.log(CalcB.addTwoNum());
+    
+    class Naming{
+        constructor(name) {
+            this.name = ["山田","田中","林",name];
+        }
+        result(i){
+            return this.name[i];
+        }
+    }
+    const OutputName = new Naming("佐藤");
+    for (let i = 0; i < OutputName.name.length; i++ ) {
+        console.log(OutputName.result(i));
+    }      
+    // OutputName.result(i)はNamingクラスのresult(i)の引数を渡してあげた結果を出力
+
+        </script>
+    </body>
+</html>
