@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>自己紹介</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+    <style type="text/css">
+        body {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            overflow-x: hidden;
+            width: 100%;
+            }
+        #main {
+            background-color: #ffffee;
+        }
+        #cover {
+            background-color: #000;
+            opacity: .6;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: none;
+            z-index: 2;
+            }
+        #menu {
+            background-color: #0033FF;
+        color:  #FFFAFA;
+            position: absolute;
+            top: 0;
+            left: -180px;
+            padding: 8px;
+            width: 180px;
+            min-height: 100%;
+            z-index: 3;
+            box-sizing: border-box;
+            transition: .4s;
+        }
+        #open {
+            color:  #00BFFF;
+            font-size: 40px;
+            margin-top: 0.4em;
+            margin-left: 0.4em;
+            float: left;
+            cursor: pointer;
+            }
+        #open , #close {
+            float: left;
+            cursor: pointer;
+            }
+        #cover.menu-open {
+            display: block;
+        }
+        #menu.menu-open {
+            left: 0;
+        }
+
+        .introName  {
+            color:  #00BFFF;
+            font-size: 52px;
+            position: absolute;
+            top: 100px;
+            left: 500px;
+            border-bottom:dotted;
+            border-color: #00c;
+            border-width:5px;
+        }
+        .imageIng {
+            width: auto;
+            height: 422px;
+            position: absolute;
+            top: 100px;
+            left: 37px;
+            z-index: 2;
+        }
+        #motto  {
+            color:  #00BFFF;
+            width: 100%;
+            height: 80px;
+            margin: 0.1px;
+            position: absolute;
+            top: 28px;
+            left: 1000px;
+            font-weight: bold;
+            z-index: 1;
+            box-sizing: border-box;
+        }
+        .mottoItem {
+            font-size: 34px;
+            font-family: serif;
+            margin: 0;
+        }
+        #collegeWork  {
+            color:  #00C;
+            font-size: 20px;
+            width: 16%;
+            margin: 0.2em auto;
+            text-align: center;
+            border: solid 5px #00BFFF;
+            border-radius: 5px;
+            font-weight: bold;
+            line-height: 0.7em;
+            padding: 10px 5px 10px　5px;
+            position: absolute;
+            top: 400px;
+            left: 450px;
+            z-index: 1;
+            box-sizing: border-box;
+        }
+        #collegeMajor {
+            color: #00C;
+            font-size: 16px;
+            width: 13%;
+            margin: 0.2em auto;
+            text-align: center;
+            border: solid 5px #00BFFF;
+            border-radius: 5px;
+            font-weight: bold;
+            line-height: 0.7em;
+            padding: 5px 5px 5px　5px;
+            position: absolute;
+            top: 280px;
+            left: 575px;
+        }
+        #myHobbies {
+            color: #00BFFF;
+            font-size: 16px;
+            width: 10%;
+            margin: 0.2em auto;
+            text-align: center;
+            border: solid 5px #00BFFF;
+            border-radius: 5px;
+            font-weight: bold;
+            line-height: 0.7em;
+            padding: 5px 5px 5px 5px;
+            position: absolute;
+            top: 180px;
+            left: 1100px;
+        }
+        #favoriteTeam {
+            color: #00C;
+            font-size: 14px;
+            width: 8%;
+            margin: 0.2em auto;
+            text-align: center;
+            border: solid 5px #00BFFF;
+            border-radius: 5px;
+            font-weight: bold;
+            line-height: 0.7em;
+            padding: 5px 5px 5px 5px;
+            position: absolute;
+            top: 470px;
+            left: 760px;
+        }
+        #birthplace {
+            color: #00BFFF;
+            font-size: 18px;
+            margin: 0.2em auto;
+            text-align: center;
+            border: solid 5px #00BFFF;
+            border-radius: 5px;
+            font-weight: bold;
+            padding: 10px;
+            position: absolute;
+            top: 325px;
+            left: 900px;
+            display: flex;
+        }
+        
+        
+        .title {
+            font-size: 15px;
+            margin-bottom: 0.5em;
+        }
+        body {
+            border: solid #00C;
+            border-width: 8px;
+            margin: 0;
+            box-sizing: content-box;
+        }
+        
+    </style>
+</head>
+</body>
+<body>
+    <div id="menu">
+        <i class="fa fa-times" id="close"></i>
+            <ul>
+                <li>HOME</li>
+                <li class="listLink"><a href="http://force-corp.co.jp/" target="_blank">お問い合わせ</a></li>
+                <li>言語</li>
+            </ul>
+    </div>
+    <div id="main">
+        <div class="fa fa-bars" id="open"></div>       
+            <h1 class="introName"><ruby><rb>中島　千夏<rt>NAKASHIMA CHINATSU</rt></rb></ruby></h1>
+        </div>
+    </div>
+    <div　class="imageSample" >
+        <img src="img/IMG_1579.JPG" alt="自分の写真"
+            class="imageIng" />
+    </div>    
+    <div id="motto">
+            <p class="title">座右の銘</p>
+            <p class="mottoItem">備えあれば患いなし</p>
+    </div>
+    <div id="collegeWork">
+        <p class="title">大学時代に</p>
+        <p class="title">力を入れた活動</p>
+        <p>オープンキャンパスの</p>
+        <p>スタッフとして</p>
+        <p>勤務したこと</p>
+    </div>
+    <div id="collegeMajor">
+        <p class="title">大学での専攻</p>
+        <p>人間科学部</p>
+        <p>臨床心理学ゼミ</p>
+    </div>
+    <div id="myHobbies">
+        <p class="title">趣味</p>
+        <p>アニメを</p>
+        <p>見ること</p>
+    </div>
+    <div id="favoriteTeam">
+        <p class="title">好きな球団</p>
+        <p>ソフトバンク</p>
+        <p>ホークス</p>
+    </div>
+     <div id="birthplace">
+        <p>出身地<br>ゆるキャラが<br>23区一<br>可愛い<br>練馬区</p>
+        <img src="img/birthplaceCharacter.jpeg" 
+            height="190" width="160" />
+    </div> 
+    <div id="cover"></div>
+    </div>
+    <script>
+        'use strict';
+
+        const open = document.getElementById('open');
+        const close = document.getElementById('close');
+            
+        const menu = document.getElementById('menu');
+        const cover = document.getElementById('cover');
+
+        open.addEventListener('click',() => {
+            menu.className = 'menu-open';
+            cover.className = 'menu-open';
+            }
+        );
+        close.addEventListener('click',() => {
+            menu.className = '';
+            cover.className = '';
+            }
+        );
+
+    </script>
+    
+</body>
+</html>
